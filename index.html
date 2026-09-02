@@ -1,2 +1,705 @@
-<h1>MARIA OYINLOLA LIMITED (MOL)<br />
-Site Maintanance Mode </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maria Oyinlola Limited (MOL) — Financial Solutions Built for Nigeria | Lagos</title>
+  <meta name="description" content="Credit, lending, investment management, financial advisory, digital financing, and agency banking for Nigerian individuals, SMEs, and corporates. A member of OA Group Nigeria.">
+  <link rel="canonical" href="https://mol.oagroupng.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Maria Oyinlola Limited — Financial Solutions Built for Nigeria">
+  <meta property="og:description" content="Credit, lending, investment management, financial advisory, and digital financing for Nigerian individuals, SMEs, and corporates.">
+  <meta property="og:url" content="https://mol.oagroupng.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/animations.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <style>
+    /* ── Hero ── */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(160deg, var(--dark-bg) 0%, #222 100%);
+      display: flex;
+      align-items: center;
+      padding-top: var(--nav-height);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 70% at 70% 40%, rgba(255,110,50,0.07), transparent),
+        radial-gradient(ellipse 40% 50% at 20% 80%, rgba(112,112,112,0.06), transparent);
+    }
+    .hero__inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--sp-16);
+      align-items: center;
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: var(--sp-16) var(--gutter);
+    }
+    .hero__trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--sp-3);
+      margin-bottom: var(--sp-8);
+    }
+    .hero__since {
+      font-family: var(--font-label);
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--mol-orange);
+      display: block;
+      margin-bottom: var(--sp-4);
+    }
+    .hero__headline {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 6vw, 5.5rem);
+      font-weight: 300;
+      color: var(--white);
+      line-height: 1.05;
+      margin-bottom: var(--sp-6);
+    }
+    .hero__headline em { color: var(--mol-orange); font-style: italic; }
+    .hero__divider {
+      width: 48px;
+      height: 2px;
+      background: var(--mol-orange);
+      margin-bottom: var(--sp-6);
+    }
+    .hero__sub {
+      font-family: var(--font-body);
+      font-size: var(--text-xl);
+      color: rgba(255,255,255,0.6);
+      font-weight: 300;
+      line-height: 1.7;
+      max-width: 46ch;
+      margin-bottom: var(--sp-10);
+    }
+    .hero__actions { display: flex; gap: var(--sp-4); flex-wrap: wrap; }
+    /* Right panel — metrics */
+    .hero__right {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--sp-4);
+    }
+    .hero-metric {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius-lg);
+      padding: var(--sp-6) var(--sp-5);
+    }
+    .hero-metric--accent {
+      background: rgba(255,110,50,0.08);
+      border-color: rgba(255,110,50,0.2);
+    }
+    .hero-metric--span { grid-column: span 2; }
+    .hero-metric__num {
+      font-family: var(--font-display);
+      font-size: clamp(var(--text-3xl), 3vw, var(--text-4xl));
+      font-weight: 300;
+      color: var(--white);
+      margin-bottom: var(--sp-1);
+    }
+    .hero-metric__num sup { font-size: 0.5em; vertical-align: super; color: var(--mol-orange); }
+    .hero-metric__label {
+      font-family: var(--font-label);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mol-orange);
+      margin-bottom: var(--sp-1);
+    }
+    .hero-metric__desc {
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      color: rgba(255,255,255,0.4);
+      line-height: 1.5;
+    }
+    /* Trust block */
+    .trust-block {
+      background: var(--off-white);
+      border-radius: var(--radius-xl);
+      padding: var(--sp-10);
+    }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--sp-6);
+    }
+    .trust-item { text-align: center; }
+    .trust-item__icon { font-size: 2rem; margin-bottom: var(--sp-3); }
+    .trust-item__title {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      font-weight: 400;
+      color: var(--grey-800);
+      margin-bottom: var(--sp-2);
+    }
+    .trust-item__desc {
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      color: var(--grey-600);
+      line-height: 1.6;
+    }
+    /* Reg notice inline */
+    .reg-notice {
+      background: rgba(255,110,50,0.06);
+      border: 1px solid rgba(255,110,50,0.2);
+      border-radius: var(--radius-md);
+      padding: var(--sp-4) var(--sp-5);
+      display: flex;
+      align-items: flex-start;
+      gap: var(--sp-3);
+      margin-top: var(--sp-8);
+    }
+    .reg-notice__icon { flex-shrink: 0; }
+    .reg-notice__text {
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      color: var(--grey-600);
+      line-height: 1.65;
+    }
+    @media (max-width: 1024px) {
+      .hero__inner { grid-template-columns: 1fr; }
+      .hero__right { grid-template-columns: 1fr 1fr; }
+      .trust-grid { grid-template-columns: repeat(2,1fr); }
+    }
+    @media (max-width: 768px) {
+      .hero__right { grid-template-columns: 1fr; }
+      .hero-metric--span { grid-column: span 1; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Maria Oyinlola Limited",
+    "alternateName": "MOL",
+    "description": "Financial services company providing credit, lending, investment management, financial advisory, digital financing, and agency banking for Nigerian individuals, SMEs, and corporates.",
+    "url": "https://mol.oagroupng.com",
+    "telephone": "+2348061650349",
+    "email": "info@mol.oagroupng.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4, Aderoju Adewuyi Street, Off Alfred Olaiya Street, Opebi-Ikeja",
+      "addressLocality": "Lagos",
+      "addressRegion": "Lagos State",
+      "addressCountry": "NG"
+    },
+    "memberOf": {
+      "@type": "Organization",
+      "name": "OA Group Nigeria",
+      "url": "https://oagroupng.com"
+    },
+    "areaServed": "Nigeria",
+    "serviceType": ["Credit", "Lending", "Investment Management", "Financial Advisory", "Digital Financing", "Agency Banking"],
+    "sameAs": ["https://linkedin.com/company/oagroupng", "https://x.com/oagroupng"]
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo" aria-label="Maria Oyinlola Limited home">
+        <span class="nav__logo-name">Maria Oyinlola Limited</span>
+        <span class="nav__logo-sub">A Member of OA Group Nigeria</span>
+      </a>
+      <div class="nav__links">
+        <a href="/" class="nav__link nav__link--active">Home</a>
+        <a href="/products/" class="nav__link">Products</a>
+        <a href="/invest/" class="nav__link">Invest</a>
+        <a href="/about/" class="nav__link">About</a>
+        <a href="/regulatory/" class="nav__link">Regulatory</a>
+        <a href="/contact/" class="nav__link">Contact</a>
+      </div>
+      <a href="/contact/" class="nav__cta">Apply Now</a>
+      <!-- IMPORTANT: Uncomment login link when client portal is active
+      <a href="#" class="nav__login">Client Login</a> -->
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+    <a href="/" class="nav__link">Home</a>
+    <a href="/products/" class="nav__link">Products</a>
+    <a href="/invest/" class="nav__link">Invest</a>
+    <a href="/about/" class="nav__link">About</a>
+    <a href="/regulatory/" class="nav__link">Regulatory</a>
+    <a href="/contact/" class="nav__link">Contact</a>
+    <a href="/contact/" class="nav__cta" style="margin-top:var(--sp-4);">Apply Now</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ── HERO ── -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero__inner">
+        <div>
+          <!-- REGULATORY BADGE — REPLACE [CBN LICENCE] WITH CONFIRMED NUMBER BEFORE DEPLOYING TO PRODUCTION -->
+          <div class="hero__trust-row">
+            <span class="trust-badge trust-badge--reg">
+              <span class="trust-badge__dot"></span>
+              <!-- IMPORTANT: Replace [CBN LICENCE: RC-XXXXXX] with confirmed regulatory licence number -->
+              CBN Regulated · [CBN LICENCE: RC-XXXXXX]
+            </span>
+            <span class="trust-badge trust-badge--cac">
+              <span class="trust-badge__dot"></span>
+              CAC: [CAC: RC-XXXXXX]
+            </span>
+            <span class="trust-badge trust-badge--group">
+              <span class="trust-badge__dot"></span>
+              OA Group Member
+            </span>
+          </div>
+          <span class="hero__since">Financial Services · Lagos, Nigeria</span>
+          <h1 class="hero__headline">Financial<br>solutions <em>built</em><br>for Nigeria.</h1>
+          <div class="hero__divider" aria-hidden="true"></div>
+          <p class="hero__sub">Credit, lending, investment management, financial advisory, and digital financing — structured for the Nigerian financial reality, backed by a regulated institution and the OA Group ecosystem.</p>
+          <div class="hero__actions">
+            <a href="/products/" class="btn btn-orange">Explore Our Products</a>
+            <a href="/invest/" class="btn btn-outline">Start Investing</a>
+          </div>
+        </div>
+
+        <!-- Right metrics panel -->
+        <div class="hero__right" aria-hidden="true">
+          <div class="hero-metric hero-metric--accent">
+            <div class="hero-metric__num">[X]<sup>+</sup></div>
+            <div class="hero-metric__label">Active Clients</div>
+            <div class="hero-metric__desc">Individuals, SMEs, and corporates across Nigeria</div>
+          </div>
+          <div class="hero-metric">
+            <div class="hero-metric__num">₦[X]<sup>bn</sup></div>
+            <div class="hero-metric__label">Loans Disbursed</div>
+            <div class="hero-metric__desc">Across credit and lending products</div>
+          </div>
+          <div class="hero-metric">
+            <div class="hero-metric__num">[X]</div>
+            <div class="hero-metric__label">Products</div>
+            <div class="hero-metric__desc">Across credit, investment, advisory, and digital finance</div>
+          </div>
+          <div class="hero-metric hero-metric--accent">
+            <div class="hero-metric__num">[X]<sup>+</sup></div>
+            <div class="hero-metric__label">Agency Partners</div>
+            <div class="hero-metric__desc">Agent network across Nigerian states</div>
+          </div>
+          <div class="hero-metric hero-metric--span">
+            <div class="hero-metric__label">Regulated by</div>
+            <div style="font-family:var(--font-body);font-size:var(--text-base);color:rgba(255,255,255,0.7);line-height:1.6;margin-top:var(--sp-2);">
+              <!-- IMPORTANT: Replace placeholders with confirmed regulatory credentials before launch -->
+              Central Bank of Nigeria (CBN) · [Confirm additional regulatory bodies: NDIC / SEC as applicable] · CAC-registered
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHO WE SERVE ── -->
+    <section class="section" aria-label="Client segments">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:var(--sp-12);">
+          <span class="section-label reveal">Who We Serve</span>
+          <h2 class="section-title reveal reveal--delay-1" style="margin:0 auto var(--sp-4);">Five entry points. One financial partner.</h2>
+          <p class="lead reveal reveal--delay-2" style="margin:0 auto;text-align:center;">MOL's financial solutions are structured around five distinct client segments — each with dedicated products, tailored entry points, and a pathway through the group ecosystem.</p>
+        </div>
+        <div class="segments-grid">
+          <a href="/products/" class="segment-card reveal" style="text-decoration:none;">
+            <div class="segment-card__icon">👤</div>
+            <div class="segment-card__name">Individuals</div>
+            <div class="segment-card__desc">Personal finance, investment, savings, and digital banking</div>
+          </a>
+          <a href="/products/" class="segment-card reveal reveal--delay-1" style="text-decoration:none;">
+            <div class="segment-card__icon">🏢</div>
+            <div class="segment-card__name">SMEs</div>
+            <div class="segment-card__desc">Working capital, business loans, and payroll financing</div>
+          </a>
+          <a href="/products/" class="segment-card reveal reveal--delay-2" style="text-decoration:none;">
+            <div class="segment-card__icon">🏛️</div>
+            <div class="segment-card__name">Corporates</div>
+            <div class="segment-card__desc">Treasury management and corporate finance solutions</div>
+          </a>
+          <a href="/products/" class="segment-card reveal reveal--delay-3" style="text-decoration:none;">
+            <div class="segment-card__icon">🤝</div>
+            <div class="segment-card__name">Institutions</div>
+            <div class="segment-card__desc">Institutional finance and payment distribution networks</div>
+          </a>
+          <a href="/contact/" class="segment-card reveal reveal--delay-4" style="text-decoration:none;">
+            <div class="segment-card__icon">📡</div>
+            <div class="segment-card__name">Partners</div>
+            <div class="segment-card__desc">Agency banking partnership and referral pathways</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PRODUCTS ── -->
+    <section class="section" style="background:var(--off-white);" aria-label="Products">
+      <div class="container">
+        <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:var(--sp-10);flex-wrap:wrap;gap:var(--sp-4);">
+          <div>
+            <span class="section-label reveal">Our Products</span>
+            <h2 class="section-title reveal reveal--delay-1" style="margin-bottom:0;">Built for the Nigerian financial environment</h2>
+          </div>
+          <a href="/products/" class="btn btn-secondary reveal">Full Product Portfolio</a>
+        </div>
+        <div class="products-grid">
+          <div class="product-card reveal">
+            <div class="product-card__header" style="background:linear-gradient(135deg,var(--mol-grey-dark),var(--dark-bg));">
+              <div class="product-card__icon">💳</div>
+              <div class="product-card__cat">For Individuals & SMEs</div>
+              <div class="product-card__name">Credit & Lending</div>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__desc">Personal loans, SME working capital, business development loans, and payroll financing — structured for Nigerian credit conditions and designed around your repayment capacity.</p>
+              <a href="/products/" class="product-card__link">Explore Credit Products <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="product-card reveal reveal--delay-1">
+            <div class="product-card__header" style="background:linear-gradient(135deg,#3A3A3A,var(--dark-bg));">
+              <div class="product-card__icon">📊</div>
+              <div class="product-card__cat">For Individuals & Corporates</div>
+              <div class="product-card__name">Investment & Asset Management</div>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__desc">Structured investment portfolios, fixed income products, and asset management — providing Nigerian investors with access to returns calibrated for local market conditions.</p>
+              <a href="/invest/" class="product-card__link">View Investment Products <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="product-card reveal reveal--delay-2">
+            <div class="product-card__header" style="background:linear-gradient(135deg,var(--mol-grey),var(--dark-bg));">
+              <div class="product-card__icon">🏦</div>
+              <div class="product-card__cat">For All Segments</div>
+              <div class="product-card__name">Financial Advisory</div>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__desc">Personal financial planning, SME financial structuring, and corporate treasury advisory — helping Nigerian individuals and organisations make better financial decisions.</p>
+              <a href="/products/" class="product-card__link">Book an Advisory Session <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="product-card reveal">
+            <div class="product-card__header" style="background:linear-gradient(135deg,#2A2A2A,var(--dark-bg));">
+              <div class="product-card__icon">📱</div>
+              <div class="product-card__cat">Digital</div>
+              <div class="product-card__name">Digital Financing</div>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__desc">Technology-enabled financing products — faster credit decisions, digital onboarding, and mobile-accessible account management for Nigeria's growing digital financial services market.</p>
+              <a href="/products/" class="product-card__link">Explore Digital Finance <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="product-card reveal reveal--delay-1">
+            <div class="product-card__header" style="background:linear-gradient(135deg,var(--mol-grey-dark),#1E1E1E);">
+              <div class="product-card__icon">🌐</div>
+              <div class="product-card__cat">For Institutions & Entrepreneurs</div>
+              <div class="product-card__name">Agency Banking</div>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__desc">Agency banking partnership — become a MOL agent and provide financial services in your community. A revenue-generating opportunity for Nigerian entrepreneurs with a network presence.</p>
+              <a href="/contact/" class="product-card__link">Become a MOL Agent <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="product-card reveal reveal--delay-2">
+            <div class="product-card__header" style="background:linear-gradient(135deg,#404040,var(--dark-bg));">
+              <div class="product-card__icon">🏗️</div>
+              <div class="product-card__cat">For Corporates & Institutions</div>
+              <div class="product-card__name">Corporate & Institutional Finance</div>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__desc">Treasury management, payment distribution, payroll financing, and institutional finance — bespoke financial products for Nigerian corporates and institutional clients with complex requirements.</p>
+              <a href="/contact/" class="product-card__link">Discuss Corporate Finance <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TRUST & REGULATORY ── -->
+    <section class="section" aria-label="Trust and regulatory information">
+      <div class="container">
+        <div class="trust-block">
+          <div style="text-align:center;margin-bottom:var(--sp-12);">
+            <span class="section-label reveal">Regulatory & Trust</span>
+            <h2 class="section-title reveal reveal--delay-1" style="margin:0 auto var(--sp-4);">The institutional foundation your finances deserve</h2>
+            <p class="lead reveal reveal--delay-2" style="margin:0 auto;text-align:center;">Financial services require institutional credibility, regulatory standing, and data security. MOL is built on all three.</p>
+          </div>
+          <div class="trust-grid">
+            <div class="trust-item reveal">
+              <div class="trust-item__icon">🏦</div>
+              <h3 class="trust-item__title">CBN Regulated</h3>
+              <p class="trust-item__desc"><!-- IMPORTANT: Insert confirmed CBN licence number and description before launch -->
+              [CBN Licence: RC-XXXXXX]. Maria Oyinlola Limited operates under the regulatory oversight of the Central Bank of Nigeria.</p>
+            </div>
+            <div class="trust-item reveal reveal--delay-1">
+              <div class="trust-item__icon">🔒</div>
+              <h3 class="trust-item__title">Data Security</h3>
+              <p class="trust-item__desc">NDPR-compliant data handling, encrypted client records, and secure digital onboarding infrastructure protect your financial information.</p>
+            </div>
+            <div class="trust-item reveal reveal--delay-2">
+              <div class="trust-item__icon">🏢</div>
+              <h3 class="trust-item__title">CAC Registered</h3>
+              <p class="trust-item__desc">Fully registered with the Corporate Affairs Commission of Nigeria. RC: [CAC: RC-XXXXXX]. Operating transparently within Nigerian corporate law.</p>
+            </div>
+            <div class="trust-item reveal reveal--delay-3">
+              <div class="trust-item__icon">🤝</div>
+              <h3 class="trust-item__title">OA Group Backed</h3>
+              <p class="trust-item__desc">A member of OA Group Nigeria — a diversified group with professional services, advisory, and contracting capabilities providing an additional institutional layer.</p>
+            </div>
+          </div>
+          <!-- IMPORTANT: This notice must remain until regulatory credentials are confirmed and inserted above -->
+          <div class="reg-notice reveal">
+            <div class="reg-notice__icon">ℹ️</div>
+            <p class="reg-notice__text"><strong>Pre-launch note:</strong> Regulatory licence numbers above are placeholders. All [CBN LICENCE], [NDIC], and [SEC] references must be replaced with confirmed, verified regulatory credentials before this site is deployed to production. See <a href="/regulatory/" style="color:var(--mol-orange);text-decoration:underline;">/regulatory/</a> for full regulatory disclosures. Deploying with placeholder credentials is not permitted.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CALCULATOR ── -->
+    <section class="section" style="background:var(--dark-bg);" aria-label="Financial calculators">
+      <div class="container">
+        <div class="two-col">
+          <div>
+            <span class="section-label reveal" style="color:var(--mol-orange);">Financial Tools</span>
+            <h2 class="section-title section-title--light reveal reveal--delay-1">Understand your numbers before you decide</h2>
+            <p class="section-body reveal reveal--delay-2" style="color:rgba(255,255,255,0.6);margin-bottom:var(--sp-8);">Use our indicative calculators to estimate loan repayments or projected investment returns. All figures are indicative only — speak with an advisor for a personalised assessment.</p>
+            <div class="reveal reveal--delay-3" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius-lg);padding:var(--sp-6);">
+              <div style="font-family:var(--font-label);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:var(--sp-4);">Eligibility Note</div>
+              <p style="font-family:var(--font-body);font-size:var(--text-base);color:rgba(255,255,255,0.5);line-height:1.7;">Calculator outputs are illustrative only. Actual rates are determined by credit assessment, prevailing CBN policy rate, and individual eligibility. MOL reserves the right to approve or decline any application in accordance with its credit policy.</p>
+            </div>
+          </div>
+          <div class="reveal reveal--delay-1">
+            <div class="calculator">
+              <div class="calc-tabs" role="tablist">
+                <button class="calc-tab active" data-panel="loanPanel" role="tab" aria-selected="true">Loan Calculator</button>
+                <button class="calc-tab" data-panel="investPanel" role="tab" aria-selected="false">Investment Calculator</button>
+              </div>
+
+              <!-- Loan Panel -->
+              <div class="calc-panel active" id="loanPanel" role="tabpanel">
+                <div class="calc-row">
+                  <div class="calc-field">
+                    <label for="loanAmount">Loan Amount (₦)</label>
+                    <input type="number" id="loanAmount" placeholder="e.g. 500000" min="50000" max="50000000">
+                  </div>
+                  <div class="calc-field">
+                    <label for="loanRate">Annual Interest Rate (%)</label>
+                    <input type="number" id="loanRate" placeholder="e.g. 24" min="1" max="100" step="0.5">
+                  </div>
+                </div>
+                <div class="calc-field">
+                  <label for="loanTenor">Loan Tenor (Years)</label>
+                  <select id="loanTenor">
+                    <option value="">Select tenor</option>
+                    <option value="0.5">6 Months</option>
+                    <option value="1">1 Year</option>
+                    <option value="2">2 Years</option>
+                    <option value="3">3 Years</option>
+                    <option value="5">5 Years</option>
+                  </select>
+                </div>
+                <div id="loanResult"></div>
+                <a href="/contact/" class="btn btn-orange" style="width:100%;justify-content:center;margin-top:var(--sp-6);">Apply for a Loan</a>
+              </div>
+
+              <!-- Investment Panel -->
+              <div class="calc-panel" id="investPanel" role="tabpanel">
+                <div class="calc-row">
+                  <div class="calc-field">
+                    <label for="investAmount">Investment Amount (₦)</label>
+                    <input type="number" id="investAmount" placeholder="e.g. 1000000" min="100000">
+                  </div>
+                  <div class="calc-field">
+                    <label for="investRate">Annual Return (%)</label>
+                    <!-- IMPORTANT: Replace indicative rate with confirmed, regulatory-approved rate before launch -->
+                    <input type="number" id="investRate" placeholder="e.g. 18" min="1" max="50" step="0.5">
+                  </div>
+                </div>
+                <div class="calc-field">
+                  <label for="investTenor">Investment Period (Years)</label>
+                  <select id="investTenor">
+                    <option value="">Select period</option>
+                    <option value="0.25">3 Months</option>
+                    <option value="0.5">6 Months</option>
+                    <option value="1">1 Year</option>
+                    <option value="2">2 Years</option>
+                    <option value="3">3 Years</option>
+                  </select>
+                </div>
+                <div id="investResult"></div>
+                <a href="/invest/" class="btn btn-orange" style="width:100%;justify-content:center;margin-top:var(--sp-6);">Start Investing</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── INSIGHTS ── -->
+    <section class="section" style="background:var(--off-white);" aria-label="Financial insights">
+      <div class="container">
+        <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:var(--sp-10);flex-wrap:wrap;gap:var(--sp-4);">
+          <div>
+            <span class="section-label reveal">Financial Intelligence</span>
+            <h2 class="section-title reveal reveal--delay-1" style="margin-bottom:0;">Insights for Nigerian financial decisions</h2>
+          </div>
+          <a href="/products/" class="btn btn-secondary reveal">All Insights</a>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card reveal">
+            <div class="blog-card__img" style="background:linear-gradient(135deg,var(--mol-grey-dark),var(--dark-bg));"></div>
+            <div class="blog-card__body">
+              <span class="blog-card__cat">SME Financing</span>
+              <h3 class="blog-card__title">SME Financing in Nigeria — What Options Actually Work</h3>
+              <p class="blog-card__excerpt">A practical guide to the financing options available to Nigerian SMEs in 2025 — from microfinance institutions to development finance banks and private sector lenders.</p>
+              <div class="blog-card__meta"><span>January 2025</span><span>·</span><span>6 min read</span></div>
+              <a href="#" class="blog-card__link">Read Article <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="blog-card reveal reveal--delay-1">
+            <div class="blog-card__img" style="background:linear-gradient(135deg,#3A3A3A,var(--dark-bg));"></div>
+            <div class="blog-card__body">
+              <span class="blog-card__cat">Investment</span>
+              <h3 class="blog-card__title">How to Build an Investment Portfolio as a Nigerian Professional</h3>
+              <p class="blog-card__excerpt">Investment strategy for Nigerian professionals navigating inflation, naira volatility, and limited access to diversified asset classes — a practical framework for building wealth in the Nigerian context.</p>
+              <div class="blog-card__meta"><span>February 2025</span><span>·</span><span>8 min read</span></div>
+              <a href="#" class="blog-card__link">Read Article <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="blog-card reveal reveal--delay-2">
+            <div class="blog-card__img" style="background:linear-gradient(135deg,var(--mol-grey),var(--dark-bg));"></div>
+            <div class="blog-card__body">
+              <span class="blog-card__cat">Agency Banking</span>
+              <h3 class="blog-card__title">Agency Banking in Nigeria: A Growth Opportunity for Entrepreneurs</h3>
+              <p class="blog-card__excerpt">Nigeria's agency banking sector is one of the fastest-growing financial services segments. What MOL agents earn, how the model works, and what it takes to build a successful agency banking business.</p>
+              <div class="blog-card__meta"><span>March 2025</span><span>·</span><span>5 min read</span></div>
+              <a href="#" class="blog-card__link">Read Article <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CROSS-REFERRAL ── -->
+    <section style="padding-block:var(--sp-8);" aria-label="Group cross-referral">
+      <div class="container">
+        <div class="cross-referral reveal">
+          <p class="cross-referral__text">Looking for a <strong>property vehicle for your investment?</strong> Our sister company Henrisol Properties specialises in Nigerian real estate investment, development, and property management.</p>
+          <a href="https://henrisol.oagroupng.com" class="btn btn-secondary" target="_blank" rel="noopener">Explore Henrisol Properties <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="cta-banner" aria-label="Call to action">
+      <div class="cta-banner__content">
+        <h2 class="cta-banner__title reveal">Your next financial decision starts here.</h2>
+        <p class="cta-banner__sub reveal reveal--delay-1">Whether you need credit, want to grow your money, or are building financial infrastructure for your business — MOL has a structured pathway for you.</p>
+        <div class="cta-banner__actions reveal reveal--delay-2">
+          <a href="/contact/" class="btn btn-orange">Apply for a Business Loan</a>
+          <a href="/invest/" class="btn btn-outline">Start an Investment Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Maria Oyinlola Limited</div>
+          <div class="footer__brand-tag">Financial Solutions Built for Nigeria</div>
+          <p class="footer__desc">Credit, lending, investment management, financial advisory, digital financing, and agency banking for Nigerian individuals, SMEs, and corporates. A regulated financial services institution.</p>
+          <a href="https://oagroupng.com" class="footer__group-badge" target="_blank" rel="noopener">A Member of OA Group Nigeria</a>
+          <div class="footer__cac">RC: [CAC: RC-XXXXXX] · CBN Regulated: [CBN LICENCE: RC-XXXXXX]</div>
+        </div>
+        <div>
+          <div class="footer__col-title">Navigation</div>
+          <nav class="footer__links" aria-label="Footer navigation">
+            <a href="/" class="footer__link">Home</a>
+            <a href="/products/" class="footer__link">Products</a>
+            <a href="/invest/" class="footer__link">Invest</a>
+            <a href="/about/" class="footer__link">About</a>
+            <a href="/regulatory/" class="footer__link">Regulatory</a>
+            <a href="/contact/" class="footer__link">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <div class="footer__col-title">OA Group</div>
+          <nav class="footer__links" aria-label="OA Group companies">
+            <a href="https://oagroupng.com" class="footer__link" target="_blank" rel="noopener">OA Group Nigeria</a>
+            <a href="https://olusola-adekanola.oagroupng.com" class="footer__link" target="_blank" rel="noopener">Olusola Adekanola & Co</a>
+            <a href="https://oaconsulting.oagroupng.com" class="footer__link" target="_blank" rel="noopener">OA Consulting</a>
+            <a href="https://henrisol.oagroupng.com" class="footer__link" target="_blank" rel="noopener">Henrisol Properties</a>
+            <a href="https://pearlprimus.oagroupng.com" class="footer__link" target="_blank" rel="noopener">Pearl Primus</a>
+          </nav>
+        </div>
+        <div>
+          <div class="footer__col-title">Contact</div>
+          <address style="font-style:normal;">
+            <p class="footer__contact-item">4, Aderoju Adewuyi Street,<br>Off Alfred Olaiya Street,<br>Opebi-Ikeja, Lagos State, Nigeria</p>
+            <p class="footer__contact-item"><a href="tel:+2348061650349" class="footer__link">+234 806 165 0349</a></p>
+            <p class="footer__contact-item"><a href="mailto:info@mol.oagroupng.com" class="footer__link">info@mol.oagroupng.com</a></p>
+          </address>
+          <div class="footer__socials" aria-label="Social media">
+            <a href="https://linkedin.com/company/oagroupng" class="footer__social" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+            <a href="https://x.com/oagroupng" class="footer__social" aria-label="X" target="_blank" rel="noopener">𝕏</a>
+            <a href="https://instagram.com/oagroupng" class="footer__social" aria-label="Instagram" target="_blank" rel="noopener">ig</a>
+            <a href="https://facebook.com/oagroupng" class="footer__social" aria-label="Facebook" target="_blank" rel="noopener">fb</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 Maria Oyinlola Limited. All rights reserved.</p>
+        <nav class="footer__legal" aria-label="Legal links">
+          <a href="/privacy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Use</a>
+          <a href="/regulatory/">Regulatory</a>
+          <a href="/disclaimer/">Disclaimer</a>
+        </nav>
+        <p class="footer__dev">Designed & developed by GreaterHeight Technologies</p>
+      </div>
+    </div>
+    <!-- Regulatory strip -->
+    <div style="background:rgba(255,110,50,0.05);border-top:1px solid rgba(255,110,50,0.1);padding:var(--sp-4) 0;margin-top:0;">
+      <div class="container" style="text-align:center;">
+        <p style="font-family:var(--font-body);font-size:var(--text-xs);color:rgba(255,255,255,0.25);line-height:1.7;">
+          Maria Oyinlola Limited is regulated by the Central Bank of Nigeria (CBN). Licence: [CBN LICENCE: RC-XXXXXX — replace before launch]. Investment products are not covered by the NDIC deposit guarantee scheme. Investment returns are not guaranteed. Past performance is not indicative of future results. Financial products are provided subject to credit assessment and regulatory approval. This website is for information purposes only and does not constitute financial advice. NDPR compliant.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top" style="position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;border-radius:50%;background:var(--mol-orange);border:none;color:var(--white);font-size:18px;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 0.3s;z-index:500;cursor:pointer;">↑</button>
+
+  <div class="cookie-banner" id="cookieBanner" role="region" aria-label="Cookie consent">
+    <p class="cookie-banner__text">We use cookies to improve your experience and comply with NDPR. By continuing, you accept our <a href="/privacy/" style="color:var(--mol-orange);text-decoration:underline;">Privacy Policy</a>.</p>
+    <div class="cookie-banner__actions">
+      <button id="cookieAccept" class="btn btn-orange" style="padding:0.5rem 1.25rem;font-size:11px;">Accept</button>
+      <button id="cookieDecline" class="btn btn-outline" style="padding:0.5rem 1.25rem;font-size:11px;">Decline Non-Essential</button>
+    </div>
+  </div>
+
+  <script src="/js/navigation.js" defer></script>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

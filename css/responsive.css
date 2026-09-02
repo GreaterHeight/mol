@@ -1,0 +1,25 @@
+/* MOL — Responsive */
+@media (max-width: 1280px) { .segments-grid { grid-template-columns: repeat(3,1fr); } }
+@media (max-width: 1024px) {
+  .two-col, .two-col--wide { grid-template-columns: 1fr; }
+  .products-grid { grid-template-columns: repeat(2,1fr); }
+  .blog-grid { grid-template-columns: repeat(2,1fr); }
+  .footer__grid { grid-template-columns: 1fr 1fr; }
+  .nav__links { display: none; }
+  .nav__login { display: none; }
+  .nav__hamburger { display: flex; }
+  .calc-row { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  .products-grid { grid-template-columns: 1fr; }
+  .blog-grid { grid-template-columns: 1fr; }
+  .segments-grid { grid-template-columns: repeat(2,1fr); }
+  .footer__grid { grid-template-columns: 1fr; }
+  .cross-referral { flex-direction: column; align-items: flex-start; }
+  .form-row-2 { grid-template-columns: 1fr; }
+  .cta-banner__actions { flex-direction: column; align-items: center; }
+  .footer__bottom { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 480px) {
+  .segments-grid { grid-template-columns: 1fr 1fr; }
+}

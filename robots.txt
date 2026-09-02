@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /client-portal/
+
+Sitemap: https://mol.oagroupng.com/sitemap.xml
+
+Host: mol.oagroupng.com

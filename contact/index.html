@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Apply — Maria Oyinlola Limited | Financial Services | Lagos</title>
+  <meta name="description" content="Apply for a loan, start an investment, book a financial advisory session, or enquire about agency banking. Contact Maria Oyinlola Limited — CBN regulated financial services in Lagos.">
+  <link rel="canonical" href="https://mol.oagroupng.com/contact/">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/variables.css"><link rel="stylesheet" href="/css/styles.css"><link rel="stylesheet" href="/css/animations.css"><link rel="stylesheet" href="/css/responsive.css">
+  <style>
+    .page-hero{background:linear-gradient(160deg,var(--dark-bg) 0%,#1E1E1E 100%);padding-top:calc(var(--nav-height) + var(--sp-16));padding-bottom:var(--sp-16);}
+    .contact-layout{display:grid;grid-template-columns:2fr 1.2fr;gap:var(--sp-16);align-items:start;}
+    .contact-info-item{padding:var(--sp-6) 0;border-bottom:1px solid var(--grey-100);}
+    .contact-info-item:last-child{border-bottom:none;}
+    .contact-info-label{font-family:var(--font-label);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--mol-orange);margin-bottom:var(--sp-2);}
+    .contact-info-value{font-family:var(--font-body);font-size:var(--text-lg);color:var(--grey-800);line-height:1.65;}
+    .contact-info-value a{color:var(--mol-grey-dark);transition:color 0.2s;}
+    .contact-info-value a:hover{color:var(--mol-orange);}
+    .map-placeholder{background:linear-gradient(135deg,var(--mol-grey-dark),var(--dark-bg));border-radius:var(--radius-lg);aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;color:rgba(255,255,255,0.5);gap:var(--sp-3);margin-top:var(--sp-8);}
+    .map-placeholder__icon{font-size:2rem;}
+    .map-placeholder__text{font-family:var(--font-label);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;}
+    .form-success{display:none;text-align:center;padding:var(--sp-12);}
+    .form-success h3{font-family:var(--font-display);font-size:var(--text-3xl);color:var(--mol-grey-dark);margin-bottom:var(--sp-4);}
+    @media(max-width:1024px){.contact-layout{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo"><span class="nav__logo-name">Maria Oyinlola Limited</span><span class="nav__logo-sub">A Member of OA Group Nigeria</span></a>
+      <div class="nav__links"><a href="/" class="nav__link">Home</a><a href="/products/" class="nav__link">Products</a><a href="/invest/" class="nav__link">Invest</a><a href="/about/" class="nav__link">About</a><a href="/regulatory/" class="nav__link">Regulatory</a><a href="/contact/" class="nav__link nav__link--active">Contact</a></div>
+      <a href="/contact/" class="nav__cta">Apply Now</a>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="mobileMenu"><a href="/" class="nav__link">Home</a><a href="/products/" class="nav__link">Products</a><a href="/invest/" class="nav__link">Invest</a><a href="/about/" class="nav__link">About</a><a href="/regulatory/" class="nav__link">Regulatory</a><a href="/contact/" class="nav__link">Contact</a><a href="/contact/" class="nav__cta" style="margin-top:var(--sp-4);">Apply Now</a></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav aria-label="Breadcrumb" class="breadcrumb"><a href="/">MOL</a><span class="breadcrumb__sep">›</span><span class="breadcrumb__current">Contact</span></nav>
+        <h1 style="font-family:var(--font-display);font-weight:300;font-size:clamp(2.5rem,5vw,5rem);color:var(--white);line-height:1.1;max-width:16ch;margin-bottom:var(--sp-4);">Apply, enquire, or get started</h1>
+        <p style="font-family:var(--font-body);font-size:var(--text-xl);color:rgba(255,255,255,0.6);max-width:55ch;font-weight:300;line-height:1.7;">Tell us what you need — credit, investment, advisory, or agency partnership — and a MOL advisor will be in touch within one business day.</p>
+      </div>
+    </section>
+
+    <section class="section section--lg">
+      <div class="container">
+        <div class="contact-layout">
+          <div>
+            <span class="section-label reveal">Send an Enquiry</span>
+            <h2 class="section-title reveal reveal--delay-1" style="margin-bottom:var(--sp-8);">What do you need?</h2>
+            <form data-validate id="contactForm" novalidate>
+              <div class="form-row-2">
+                <div class="form-group"><label class="form-label" for="firstName">First Name <span aria-hidden="true">*</span></label><input class="form-input" type="text" id="firstName" name="firstName" required autocomplete="given-name" placeholder="Adaobi"><p class="form-error">Please enter your first name.</p></div>
+                <div class="form-group"><label class="form-label" for="lastName">Last Name <span aria-hidden="true">*</span></label><input class="form-input" type="text" id="lastName" name="lastName" required autocomplete="family-name" placeholder="Okafor"><p class="form-error">Please enter your last name.</p></div>
+              </div>
+              <div class="form-row-2">
+                <div class="form-group"><label class="form-label" for="email">Email Address <span aria-hidden="true">*</span></label><input class="form-input" type="email" id="email" name="email" required autocomplete="email" placeholder="adaobi@example.com"><p class="form-error">Please enter a valid email address.</p></div>
+                <div class="form-group"><label class="form-label" for="phone">Phone Number <span aria-hidden="true">*</span></label><input class="form-input" type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+234 800 000 0000"><p class="form-error">Please enter your phone number.</p></div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="service">I am enquiring about <span aria-hidden="true">*</span></label>
+                <select class="form-select" id="service" name="service" required>
+                  <option value="">Select an area</option>
+                  <option value="personal-loan">Personal Loan</option>
+                  <option value="business-loan">Business / SME Loan</option>
+                  <option value="investment">Investment Portfolio</option>
+                  <option value="financial-advisory">Financial Advisory Session</option>
+                  <option value="digital-finance">Digital Finance</option>
+                  <option value="agency-banking">Agency Banking Partnership</option>
+                  <option value="corporate-finance">Corporate / Institutional Finance</option>
+                  <option value="general">General Enquiry</option>
+                </select>
+                <p class="form-error">Please select an area of interest.</p>
+              </div>
+              <div class="form-group"><label class="form-label" for="amount">Amount Required (₦) — if applicable</label><input class="form-input" type="text" id="amount" name="amount" placeholder="e.g. ₦500,000"></div>
+              <div class="form-group"><label class="form-label" for="message">Tell us more <span aria-hidden="true">*</span></label><textarea class="form-textarea" id="message" name="message" required placeholder="Please describe your financial need or question. The more detail you provide, the better we can prepare for your initial call."></textarea><p class="form-error">Please tell us about your requirements.</p></div>
+              <div class="form-group form-checkbox">
+                <input type="checkbox" id="privacy" name="privacy" required>
+                <label class="form-checkbox-label" for="privacy">I agree to the <a href="/privacy/" style="color:var(--mol-orange);text-decoration:underline;">Privacy Policy</a>. I understand my information is handled in accordance with NDPR and applicable data protection regulations.</label>
+              </div>
+              <button type="submit" class="btn btn-orange" style="width:100%;justify-content:center;margin-top:var(--sp-4);">Submit Enquiry</button>
+              <div class="form-success" aria-live="polite">
+                <h3>Enquiry received.</h3>
+                <p>A MOL advisor will be in touch within one business day to discuss your requirements. All communications are strictly confidential.</p>
+              </div>
+            </form>
+          </div>
+
+          <div class="reveal reveal--delay-1">
+            <span class="section-label">Contact Information</span>
+            <div class="contact-info-item"><div class="contact-info-label">Registered Office</div><address class="contact-info-value" style="font-style:normal;">4, Aderoju Adewuyi Street,<br>Off Alfred Olaiya Street,<br>Opebi-Ikeja, Lagos State, Nigeria</address></div>
+            <div class="contact-info-item"><div class="contact-info-label">Telephone</div><div class="contact-info-value"><a href="tel:+2348061650349">+234 806 165 0349</a></div></div>
+            <div class="contact-info-item"><div class="contact-info-label">Email</div><div class="contact-info-value"><a href="mailto:info@mol.oagroupng.com">info@mol.oagroupng.com</a></div></div>
+            <div class="contact-info-item"><div class="contact-info-label">Office Hours</div><div class="contact-info-value">Monday – Friday<br>8:00am – 5:00pm (WAT)</div></div>
+            <div class="contact-info-item"><div class="contact-info-label">Regulatory</div><div class="contact-info-value">CBN Regulated · [CBN LICENCE: RC-XXXXXX]<br>CAC: [CAC: RC-XXXXXX]</div></div>
+            <div class="contact-info-item"><div class="contact-info-label">Group</div><div class="contact-info-value"><a href="https://oagroupng.com" target="_blank" rel="noopener">A Member of OA Group Nigeria →</a></div></div>
+            <div class="map-placeholder" role="img" aria-label="Office location — Opebi-Ikeja, Lagos">
+              <div class="map-placeholder__icon" aria-hidden="true">📍</div>
+              <div class="map-placeholder__text">Opebi-Ikeja, Lagos</div>
+              <div style="font-family:var(--font-body);font-size:0.85rem;color:rgba(255,255,255,0.35);text-align:center;padding:0 var(--sp-4);">4, Aderoju Adewuyi Street<br>Off Alfred Olaiya Street</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div style="padding-block:var(--sp-8);"><div class="container"><div class="cross-referral reveal"><p class="cross-referral__text">Need a <strong>property investment vehicle?</strong> Our sister company Henrisol Properties can help you invest your returns in Nigerian real estate.</p><a href="https://henrisol.oagroupng.com/contact/" class="btn btn-secondary" target="_blank" rel="noopener">Contact Henrisol →</a></div></div></div>
+  </main>
+
+  <footer class="footer" role="contentinfo"><div class="container"><div class="footer__grid"><div><div class="footer__brand-name">Maria Oyinlola Limited</div><div class="footer__brand-tag">Financial Solutions Built for Nigeria</div><p class="footer__desc">CBN regulated financial services. A member of OA Group Nigeria.</p><a href="https://oagroupng.com" class="footer__group-badge" target="_blank" rel="noopener">A Member of OA Group Nigeria</a><div class="footer__cac">RC: [CAC: RC-XXXXXX]</div></div><div><div class="footer__col-title">Navigation</div><nav class="footer__links"><a href="/" class="footer__link">Home</a><a href="/products/" class="footer__link">Products</a><a href="/invest/" class="footer__link">Invest</a><a href="/regulatory/" class="footer__link">Regulatory</a><a href="/contact/" class="footer__link">Contact</a></nav></div><div><div class="footer__col-title">OA Group</div><nav class="footer__links"><a href="https://oagroupng.com" class="footer__link" target="_blank" rel="noopener">OA Group Nigeria</a><a href="https://olusola-adekanola.oagroupng.com" class="footer__link" target="_blank" rel="noopener">OA & Co</a><a href="https://oaconsulting.oagroupng.com" class="footer__link" target="_blank" rel="noopener">OA Consulting</a><a href="https://henrisol.oagroupng.com" class="footer__link" target="_blank" rel="noopener">Henrisol</a><a href="https://pearlprimus.oagroupng.com" class="footer__link" target="_blank" rel="noopener">Pearl Primus</a></nav></div><div><div class="footer__col-title">Contact</div><address style="font-style:normal;"><p class="footer__contact-item">4, Aderoju Adewuyi Street, Opebi-Ikeja, Lagos</p><p class="footer__contact-item"><a href="tel:+2348061650349" class="footer__link">+234 806 165 0349</a></p></address><div class="footer__socials"><a href="https://linkedin.com/company/oagroupng" class="footer__social" aria-label="LinkedIn" target="_blank" rel="noopener">in</a><a href="https://x.com/oagroupng" class="footer__social" aria-label="X" target="_blank" rel="noopener">𝕏</a></div></div></div><div class="footer__bottom"><p class="footer__copy">© 2025 Maria Oyinlola Limited. All rights reserved.</p><nav class="footer__legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/regulatory/">Regulatory</a><a href="/disclaimer/">Disclaimer</a></nav><p class="footer__dev">Designed & developed by GreaterHeight Technologies</p></div></div></footer>
+  <button id="backToTop" aria-label="Back to top" style="position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;border-radius:50%;background:var(--mol-orange);border:none;color:var(--white);font-size:18px;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 0.3s;z-index:500;cursor:pointer;">↑</button>
+  <div class="cookie-banner" id="cookieBanner"><p class="cookie-banner__text">We use cookies. <a href="/privacy/" style="color:var(--mol-orange);">Privacy Policy</a>.</p><div class="cookie-banner__actions"><button id="cookieAccept" class="btn btn-orange" style="padding:0.5rem 1.25rem;font-size:11px;">Accept</button><button id="cookieDecline" class="btn btn-outline" style="padding:0.5rem 1.25rem;font-size:11px;">Decline</button></div></div>
+  <script src="/js/navigation.js" defer></script><script src="/js/main.js" defer></script>
+</body>
+</html>

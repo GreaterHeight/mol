@@ -1,0 +1,6 @@
+/* MOL — Animations */
+@keyframes fadeUp { from { opacity:0; transform:translateY(32px); } to { opacity:1; transform:none; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.6; } }
+.animate-fade-up { animation: fadeUp 0.7s var(--ease) both; }
+.animate-fade-in { animation: fadeIn 0.5s var(--ease) both; }

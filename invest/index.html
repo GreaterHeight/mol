@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invest — Maria Oyinlola Limited | Investment & Asset Management | Nigeria</title>
+  <meta name="description" content="Investment and asset management products for Nigerian individuals and corporates. Fixed income, portfolio management, and wealth building with MOL.">
+  <link rel="canonical" href="https://mol.oagroupng.com/invest/">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/variables.css"><link rel="stylesheet" href="/css/styles.css"><link rel="stylesheet" href="/css/animations.css"><link rel="stylesheet" href="/css/responsive.css">
+  <style>
+    .page-hero{background:linear-gradient(160deg,var(--dark-bg) 0%,#1E1E1E 100%);padding-top:calc(var(--nav-height) + var(--sp-20));padding-bottom:var(--sp-20);}
+    .invest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-6);}
+    .invest-card{border:1px solid var(--grey-100);border-radius:var(--radius-xl);overflow:hidden;background:var(--white);transition:transform var(--duration) var(--ease),box-shadow var(--duration) var(--ease);}
+    .invest-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);}
+    .invest-card__header{padding:var(--sp-8) var(--sp-6);background:linear-gradient(135deg,var(--mol-grey-dark),var(--dark-bg));}
+    .invest-card__type{font-family:var(--font-label);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--mol-orange);margin-bottom:var(--sp-3);}
+    .invest-card__name{font-family:var(--font-display);font-size:var(--text-2xl);font-weight:300;color:var(--white);margin-bottom:var(--sp-2);line-height:1.2;}
+    .invest-card__min{font-family:var(--font-body);font-size:var(--text-sm);color:rgba(255,255,255,0.4);}
+    .invest-card__body{padding:var(--sp-6);}
+    .invest-card__desc{font-family:var(--font-body);font-size:var(--text-base);color:var(--grey-600);line-height:1.7;margin-bottom:var(--sp-4);}
+    .invest-card__features{display:flex;flex-direction:column;gap:var(--sp-2);margin-bottom:var(--sp-5);}
+    .invest-card__feature{font-family:var(--font-body);font-size:var(--text-sm);color:var(--grey-600);display:flex;align-items:center;gap:var(--sp-2);}
+    .invest-card__feature::before{content:'✓';color:var(--mol-orange);font-weight:700;flex-shrink:0;}
+    .risk-disclaimer{background:rgba(255,110,50,0.06);border:1px solid rgba(255,110,50,0.2);border-radius:var(--radius-lg);padding:var(--sp-8);margin-top:var(--sp-12);}
+    .risk-disclaimer__title{font-family:var(--font-label);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--mol-orange);margin-bottom:var(--sp-4);}
+    .risk-disclaimer__body{font-family:var(--font-body);font-size:var(--text-base);color:var(--grey-600);line-height:1.75;}
+    .risk-disclaimer__body p{margin-bottom:var(--sp-3);}
+    @media(max-width:1024px){.invest-grid{grid-template-columns:1fr 1fr;}}
+    @media(max-width:768px){.invest-grid{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo"><span class="nav__logo-name">Maria Oyinlola Limited</span><span class="nav__logo-sub">A Member of OA Group Nigeria</span></a>
+      <div class="nav__links"><a href="/" class="nav__link">Home</a><a href="/products/" class="nav__link">Products</a><a href="/invest/" class="nav__link nav__link--active">Invest</a><a href="/about/" class="nav__link">About</a><a href="/regulatory/" class="nav__link">Regulatory</a><a href="/contact/" class="nav__link">Contact</a></div>
+      <a href="/contact/" class="nav__cta">Start Investing</a>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="mobileMenu"><a href="/" class="nav__link">Home</a><a href="/products/" class="nav__link">Products</a><a href="/invest/" class="nav__link">Invest</a><a href="/about/" class="nav__link">About</a><a href="/regulatory/" class="nav__link">Regulatory</a><a href="/contact/" class="nav__link">Contact</a><a href="/contact/" class="nav__cta" style="margin-top:var(--sp-4);">Start Investing</a></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav aria-label="Breadcrumb" class="breadcrumb"><a href="/">MOL</a><span class="breadcrumb__sep">›</span><span class="breadcrumb__current">Invest</span></nav>
+        <h1 style="font-family:var(--font-display);font-weight:300;font-size:clamp(2.5rem,5vw,5rem);color:var(--white);line-height:1.1;max-width:16ch;margin-bottom:var(--sp-6);">Build wealth in <em style="color:var(--mol-orange);">Nigeria's market</em></h1>
+        <p style="font-family:var(--font-body);font-size:var(--text-xl);color:rgba(255,255,255,0.6);max-width:55ch;font-weight:300;line-height:1.7;">MOL's investment products are designed for the Nigerian financial environment — providing individuals and corporates with structured access to investment returns calibrated for local market conditions.</p>
+        <div style="margin-top:var(--sp-8);padding:var(--sp-4) var(--sp-5);background:rgba(255,110,50,0.08);border:1px solid rgba(255,110,50,0.2);border-radius:var(--radius-md);display:inline-block;">
+          <p style="font-family:var(--font-body);font-size:var(--text-sm);color:rgba(255,255,255,0.5);">⚠ Investment returns are not guaranteed. Capital is at risk. Please read all product documentation and <a href="/regulatory/" style="color:var(--mol-orange);">Regulatory Disclosures</a> before investing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--lg">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:var(--sp-12);">
+          <span class="section-label reveal">Investment Products</span>
+          <h2 class="section-title reveal reveal--delay-1" style="margin:0 auto var(--sp-4);">Structured investment options</h2>
+          <p class="lead reveal reveal--delay-2" style="margin:0 auto;text-align:center;">Each investment product is structured with defined minimum ticket sizes, indicative return ranges, and risk profiles. [Specific rates and minimum investments to be confirmed by client and reviewed for regulatory compliance before launch.]</p>
+        </div>
+        <div class="invest-grid">
+          <div class="invest-card reveal">
+            <div class="invest-card__header">
+              <div class="invest-card__type">Short-Term</div>
+              <div class="invest-card__name">Fixed Income Portfolio</div>
+              <div class="invest-card__min">Min. ticket: ₦[XXX,XXX] · Tenor: [X] months</div>
+            </div>
+            <div class="invest-card__body">
+              <p class="invest-card__desc">A short-term fixed income product offering competitive returns for Nigerian investors seeking capital preservation with predictable returns over a defined period.</p>
+              <div class="invest-card__features">
+                <span class="invest-card__feature">Indicative return: [X]% p.a. — to be confirmed</span>
+                <span class="invest-card__feature">Defined maturity date</span>
+                <span class="invest-card__feature">Minimum [X] month hold period</span>
+                <span class="invest-card__feature">Available to individuals and corporates</span>
+              </div>
+              <a href="/contact/" class="btn btn-orange" style="width:100%;justify-content:center;">Start This Portfolio</a>
+            </div>
+          </div>
+          <div class="invest-card reveal reveal--delay-1">
+            <div class="invest-card__header" style="background:linear-gradient(135deg,#3A3A3A,var(--dark-bg));">
+              <div class="invest-card__type">Medium-Term</div>
+              <div class="invest-card__name">Growth Portfolio</div>
+              <div class="invest-card__min">Min. ticket: ₦[X,XXX,XXX] · Tenor: [X] years</div>
+            </div>
+            <div class="invest-card__body">
+              <p class="invest-card__desc">A medium-term investment portfolio designed for Nigerian investors with a longer time horizon — structured to balance return optimisation with capital protection.</p>
+              <div class="invest-card__features">
+                <span class="invest-card__feature">Indicative return: [X]% p.a. — to be confirmed</span>
+                <span class="invest-card__feature">Diversified asset allocation</span>
+                <span class="invest-card__feature">Quarterly performance reporting</span>
+                <span class="invest-card__feature">Annual review with advisor</span>
+              </div>
+              <a href="/contact/" class="btn btn-orange" style="width:100%;justify-content:center;">Start This Portfolio</a>
+            </div>
+          </div>
+          <div class="invest-card reveal reveal--delay-2">
+            <div class="invest-card__header" style="background:linear-gradient(135deg,var(--mol-grey),var(--dark-bg));">
+              <div class="invest-card__type">Institutional</div>
+              <div class="invest-card__name">Corporate Treasury</div>
+              <div class="invest-card__min">Min. ticket: ₦[XX,XXX,XXX] · Bespoke terms</div>
+            </div>
+            <div class="invest-card__body">
+              <p class="invest-card__desc">Bespoke treasury management and investment solutions for Nigerian corporate clients — structured to manage idle corporate cash, optimise returns on working capital, and meet institutional requirements.</p>
+              <div class="invest-card__features">
+                <span class="invest-card__feature">Bespoke structure and terms</span>
+                <span class="invest-card__feature">Dedicated relationship manager</span>
+                <span class="invest-card__feature">Institutional reporting standards</span>
+                <span class="invest-card__feature">Multiple currency options where applicable</span>
+              </div>
+              <a href="/contact/" class="btn btn-orange" style="width:100%;justify-content:center;">Discuss Corporate Treasury</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="risk-disclaimer reveal">
+          <div class="risk-disclaimer__title">⚠ Important Investment Risk Disclosures</div>
+          <div class="risk-disclaimer__body">
+            <p>Investment products offered by Maria Oyinlola Limited are not savings deposits. They carry investment risk, including the risk of loss of capital.</p>
+            <p>All return rates shown above are indicative only and are subject to market conditions, CBN policy rate movements, and the specific terms of each product. Actual returns may be higher or lower than indicated.</p>
+            <p>Past performance of any MOL investment product is not indicative of future results. MOL does not guarantee investment returns.</p>
+            <p>Before investing, clients are strongly advised to read the full product documentation, seek independent financial advice, and ensure the investment matches their risk tolerance and financial objectives.</p>
+            <p>All investment products are provided subject to CBN regulatory requirements and MOL's published terms and conditions. See our <a href="/regulatory/" style="color:var(--mol-orange);">Regulatory Disclosures page</a> for full regulatory information.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div style="padding-block:var(--sp-8);"><div class="container"><div class="cross-referral reveal"><p class="cross-referral__text">Looking for a <strong>property vehicle for your investment returns?</strong> Our sister company Henrisol Properties provides real estate investment, development, and property management in Nigeria.</p><a href="https://henrisol.oagroupng.com" class="btn btn-secondary" target="_blank" rel="noopener">Explore Henrisol Properties →</a></div></div></div>
+
+    <section class="cta-banner">
+      <div class="cta-banner__content">
+        <h2 class="cta-banner__title reveal">Ready to grow your money?</h2>
+        <p class="cta-banner__sub reveal reveal--delay-1">Book a Financial Advisory Session. Our team will assess your investment objectives, risk tolerance, and time horizon — and recommend the right MOL investment product for your situation.</p>
+        <div class="cta-banner__actions reveal reveal--delay-2">
+          <a href="/contact/" class="btn btn-orange">Book an Investment Advisory Session</a>
+          <a href="/regulatory/" class="btn btn-outline">Read Risk Disclosures</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo"><div class="container"><div class="footer__grid"><div><div class="footer__brand-name">Maria Oyinlola Limited</div><div class="footer__brand-tag">Financial Solutions Built for Nigeria</div><p class="footer__desc">CBN regulated financial services. A member of OA Group Nigeria.</p><a href="https://oagroupng.com" class="footer__group-badge" target="_blank" rel="noopener">A Member of OA Group Nigeria</a><div class="footer__cac">RC: [CAC: RC-XXXXXX]</div></div><div><div class="footer__col-title">Navigation</div><nav class="footer__links"><a href="/" class="footer__link">Home</a><a href="/products/" class="footer__link">Products</a><a href="/invest/" class="footer__link">Invest</a><a href="/regulatory/" class="footer__link">Regulatory</a><a href="/contact/" class="footer__link">Contact</a></nav></div><div><div class="footer__col-title">OA Group</div><nav class="footer__links"><a href="https://oagroupng.com" class="footer__link" target="_blank" rel="noopener">OA Group Nigeria</a><a href="https://oaconsulting.oagroupng.com" class="footer__link" target="_blank" rel="noopener">OA Consulting</a><a href="https://henrisol.oagroupng.com" class="footer__link" target="_blank" rel="noopener">Henrisol Properties</a></nav></div><div><div class="footer__col-title">Contact</div><address style="font-style:normal;"><p class="footer__contact-item">4, Aderoju Adewuyi Street, Opebi-Ikeja, Lagos</p><p class="footer__contact-item"><a href="tel:+2348061650349" class="footer__link">+234 806 165 0349</a></p></address></div></div><div class="footer__bottom"><p class="footer__copy">© 2025 Maria Oyinlola Limited. All rights reserved. Investment products carry risk.</p><nav class="footer__legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/regulatory/">Regulatory</a><a href="/disclaimer/">Disclaimer</a></nav><p class="footer__dev">Designed & developed by GreaterHeight Technologies</p></div></div></footer>
+  <button id="backToTop" aria-label="Back to top" style="position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;border-radius:50%;background:var(--mol-orange);border:none;color:var(--white);font-size:18px;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 0.3s;z-index:500;cursor:pointer;">↑</button>
+  <div class="cookie-banner" id="cookieBanner"><p class="cookie-banner__text">We use cookies. <a href="/privacy/" style="color:var(--mol-orange);">Privacy Policy</a>.</p><div class="cookie-banner__actions"><button id="cookieAccept" class="btn btn-orange" style="padding:0.5rem 1.25rem;font-size:11px;">Accept</button><button id="cookieDecline" class="btn btn-outline" style="padding:0.5rem 1.25rem;font-size:11px;">Decline</button></div></div>
+  <script src="/js/navigation.js" defer></script><script src="/js/main.js" defer></script>
+</body>
+</html>
