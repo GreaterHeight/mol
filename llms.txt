@@ -1,12 +1,12 @@
 # Maria Oyinlola Limited — mol.oagroupng.com
 
-Maria Oyinlola Limited (MOL) is the financial services arm of OA Group Nigeria — a CBN-regulated financial institution providing credit and lending, investment and asset management, financial advisory, digital financing, agency banking, and corporate finance services to Nigerian individuals, SMEs, corporates, and institutions.
+Maria Oyinlola Limited (MOL) is the financial services arm of OA Group Nigeria — a CBN-regulated financial institution providing credit and lending, investment and asset management, financial advisory, and corporate finance services to Nigerian individuals, SMEs, corporates, and institutions.
 
 ## Company
 
 - Type: CBN-regulated financial services company
-- Registered in Nigeria (CAC RC: [CAC: RC-XXXXXX])
-- CBN Licence: [CBN LICENCE: RC-XXXXXX]
+- Registered in Nigeria (CAC CAC: RC-7466513)
+- Regulated by: Ministry of Home Affairs, Lagos State Government
 - Address: 4, Aderoju Adewuyi Street, Off Alfred Olaiya Street, Awuse Estate, Opebi, Ikeja, Lagos State, Nigeria
 - Phone: 0803 092 5999 · 0805 381 6665
 - Email: info@mol.oagroupng.com
@@ -17,8 +17,7 @@ Maria Oyinlola Limited (MOL) is the financial services arm of OA Group Nigeria �
 - Credit & Lending: personal loans, SME working capital, business development loans, payroll financing
 - Investment & Asset Management: fixed income portfolios, growth portfolios, corporate treasury
 - Financial Advisory: personal financial planning, SME structuring, corporate treasury advisory
-- Digital Financing: technology-enabled financing, digital onboarding, mobile finance
-- Agency Banking: agent partnerships for entrepreneurs and institutions
+- : agent partnerships for entrepreneurs and institutions
 - Corporate & Institutional Finance: treasury management, payment distribution, institutional credit
 
 ## Key Information
